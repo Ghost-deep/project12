@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <img src="static/assets/logo.png" alt="Resume Builder Logo" class="logo">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="builder.html" class="nav-link">Build Resume</a>
+                <a href="preview.html" class="nav-link active">Live Preview</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="preview-container">
+        <div class="container">
+            <h1 class="section-title">Live Resume Preview</h1>
+
+            <div id="resumePreview" class="resume-preview">
+                <!-- 👇 Resume will render here dynamically -->
+                <h2 id="previewName">John Doe</h2>
+                <p id="previewEmail">john@example.com</p>
+                <p id="previewPhone">+1234567890</p>
+                <p id="previewSummary">Brief professional summary will appear here.</p>
+
+                <h3>🎓 Education</h3>
+                <p><strong id="previewDegree">B.Sc in Computer Science</strong>, <span id="previewInstitution">XYZ University</span> (<span id="previewEduYear">2021</span>)</p>
+
+                <h3>💼 Experience</h3>
+                <p><strong id="previewJobTitle">Software Engineer</strong> at <span id="previewCompany">ABC Corp</span> (<span id="previewExpYears">2022 - Present</span>)</p>
+                <p id="previewJobDescription">Description of the job role goes here.</p>
+
+                <h3>🛠️ Skills</h3>
+                <p id="previewSkills">Python, React, SQL</p>
+            </div>
+
+            <div class="preview-buttons">
+                <button onclick="exportAsPDF()" class="btn-primary">📄 Export as PDF</button>
+                <button onclick="exportAsDOCX()" class="btn-secondary">📄 Export as DOCX</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AI Resume Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
